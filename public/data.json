@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "PLATE-LOADED INCLINE PRESS",
+        "img":"https://5.imimg.com/data5/TK/QH/MY-18579035/fitness-chest-machines-500x500.jpg",
+        "text":"The Signature Series Incline Press uses horizontal grips to simulate a more traditional bench press, converging movements for a natural forward pressing motion, and iso-lateral movements for equal strength development. Signature Series Plate-Loaded enhances any facility and utilizes independent converging and diverging movements for an instinctively natural experience.",
+        "time":10
+    },
+    {
+        "id":2,
+        "name":"PLATE LOADED FRONT PULLDOWN",
+        "img":"https://www.lifefitness.com/resource/image/35642/portrait_ratio1x1/600/600/a597b2859a8b7d1cd0ba2c1cdb1c60bd/dv/plateloaded-frontpulldown.png",
+        "text":"The Signature Series Front Pulldown has a seat and chest pad that are slightly angled for enhanced stabilization. It also features an underhand grip position combined with an overhead pivot for a natural arc of motion, and iso-lateral movements that allow equal strength development. Signature Series Plate-Loaded enhances any facility and utilizes independent converging and diverging movements for an instinctively natural experience.",
+        "time":15
+    },
+    {
+        "id":3,
+        "name":"Lifting",
+        "img":"https://images.pexels.com/photos/9171160/pexels-photo-9171160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "text":"A man-lifting kite is a kite designed to lift a person from the ground. Historically, man-lifting kites have been used chiefly for reconnaissance. Interest in their development declined with the advent of powered flight at the beginning of the 20th century. Recreational man-lifting kites gradually gained popularity through the latter half of the 20th century, branching into multiple sports. ",
+        "time":20
+    },
+    {
+        "id":4,
+        "name":"Dumbbell",
+        "img":"https://images.pexels.com/photos/700446/pexels-photo-700446.jpeg?cs=srgb&dl=pexels-timothy-700446.jpg&fm=jpg",
+        "text":"The forerunner of the dumbbell, halteres, were used in ancient Greece as lifting weights[1][2] and also as weights in the ancient Greek version of the long jump.[3] A kind of dumbbell was also used in India for more than a millennium, shaped like a club – so it was named Indian club.[4][5] The design of the, as the equipment was referred to, can be seen as a halfway point between a barbell and a dumbbell. It was generally used in pairs, in workouts by wrestlers, bodybuilders, sports players, and others wishing to increase strength and muscle size.",
+        "time":10
+    },
+    {
+        "id":5,
+        "name":"Push-up",
+        "img":"https://blog.nasm.org/hubfs/pushup-progressions.jpg",
+        "text":"The push-up (sometimes called a press-up in British English) is a common calisthenics exercise beginning from the prone position. By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps, and anterior deltoids, with ancillary benefits to the rest of the deltoids, serratus anterior, coracobrachialis and the midsection as a whole.[1] Push-ups are a basic exercise used in civilian athletic training or physical education and commonly in military physical training. They are also a common form of punishment used in the military, school sport, and some martial arts disciplines.",
+        "time":10
+    },
+    {
+        "id":6,
+        "name":"Chest-exercise",
+        "img":"https://www.mensjournal.com/wp-content/uploads/2021/02/shutterstock_570689305.jpg?quality=86&strip=all",
+        "text":"If you really want to pump up your pecs and build the best chest in the gym, you need targeted chest workouts that stimulate muscle growth in the best way possible. Because the main chest muscles (specifically the pectoralis major, aka pecs) are so huge, and contribute to so many movements, you’ll need more than just a handful of moves to build your upper chest (and entire upper body) from every angle.",
+        "time": 20
+    }
+    
+]
