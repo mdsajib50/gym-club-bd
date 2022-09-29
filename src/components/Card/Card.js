@@ -1,36 +1,24 @@
 import React from 'react';
+import './Card.css';
 
-const Card = () => {
+const Card = (props) => {
+    const {name,img,time,text} = props.card
+    const addToList =()=>{
+        console.log('added')
+    }
     return (
-        <div className="row">
-        <div className="col-sm-4">
-            <div className="card">
-            <img src="..." className="card-img-top" alt="..."/>
+        
+        
+        <div className="card">
+            <img src={img} class="card-img-top" alt="..."/>
             <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{text}</p>
+                <p className="card-text">Time Required:{time}</p>
+                <button onClick={addToList} className="btn btn-primary">Add to list</button>
             </div>
             </div>
-        </div>
-        <div className="col-sm-4">
-            <div className="card">
-            <img src="..." class="card-img-top" alt="..."/>
-            <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            </div>
-        </div>
-        <div className="col-sm-4">
-            <div className="card">
-            <img src="..." class="card-img-top" alt="..."/>
-            <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            </div>
-        </div>
-        </div>
+        
     );
 };
 
