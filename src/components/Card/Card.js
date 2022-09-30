@@ -2,10 +2,9 @@ import React from 'react';
 import './Card.css';
 
 const Card = (props) => {
-    const {name,img,time,text} = props.card
-    const addToList =()=>{
-        console.log('added')
-    }
+    const {name,img,time,text} = props.card;
+    const {addToListHandler} =props
+    
     return (
         
         
@@ -15,7 +14,7 @@ const Card = (props) => {
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{text}</p>
                 <p className="card-text">Time Required:{time}</p>
-                <button onClick={addToList} className="btn btn-primary">Add to list</button>
+                <button onClick={()=>addToListHandler(props.card)} className="btn btn-primary">Add to list</button>
             </div>
             </div>
         
