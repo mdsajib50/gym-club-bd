@@ -25,7 +25,7 @@ const Details = (props) => {
             time: timeArr
         }
         const timeObj = JSON.stringify(newObj)
-        console.log(timeObj);
+       
         localStorage.setItem('time',timeObj)
         setBreakTime(breakTime)}
          
