@@ -15,11 +15,10 @@ const Cards = () => {
         .then(data => setCards(data))
     },[])
     const addToListHandler = (card)=>{
-        console.log(card)
         const newCard =[...times,card]
         setTime(newCard)
     }
-    console.log(times)
+
     return (
        
             <div className ='container'>

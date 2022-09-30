@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Break from '../Break/Break';
 import './Details.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Details = (props) => {
+    const notify =()=>{
+        toast('WoW Activity Completed',
+           {position: toast.POSITION.TOP_CENTER})
+    }
     const {times}= props
     let totalTime = 0;
     for (const time of times) {
 
         totalTime = totalTime + time.time
     }
-    {
-    const buttonText = document.getElementsByClassName('button-text');
+    const [breakTime, setBreakTime]= useState([])
 
-    buttonText.forEach((value) => console.log(value))
-    }
+    const handelBreakTime = (breakTime)=>{
+        const timeArr= [breakTime];
+        const newTime= [...timeArr,breakTime]
+        console.log(newTime);
+        localStorage.setItem('value','newTime')
+        setBreakTime(breakTime)}
+         
+    
 
     return (
+        
         <div>
                <div>
             <div>
@@ -27,17 +41,23 @@ const Details = (props) => {
                 <h5>Age: <small>31</small> years</h5>
             </div>
         </div>
+
               <div className='m-3'>
-                <button className='button-text bg-info bg-opacity-50 rounded-circle m-1 border border-0 p-2'>10 <small>min</small></button>
-                <button className='button-text bg-info bg-opacity-50 rounded-circle m-1 border border-0 p-2'>15 <small>min</small></button>
-                <button className='button-text bg-info bg-opacity-50 rounded-circle m-1 border border-0 p-2'>20 <small>min</small></button>
-                <button className='button-text bg-info bg-opacity-50 rounded-circle m-1 border border-0 p-2'>30 <small>min</small></button>
+                  <h5>Add A Break</h5>
+                <div className='d-flex'>
+                <Break breakTime={10} handelBreakTime={handelBreakTime}></Break>
+                <Break breakTime={20} handelBreakTime={handelBreakTime}></Break>
+                <Break breakTime={30} handelBreakTime={handelBreakTime}></Break>
+                <Break breakTime={40} handelBreakTime={handelBreakTime}></Break>
+                </div>
+                
             </div>
                 <div className='bg-info bg-opacity-75 p-2 mt-5'>
                 <h5>Exercise Details</h5>
                 <p className='bg-dark bg-opacity-50 text-light'> <b>Exercise Time:</b> {totalTime} min</p>
-                <p className='bg-dark bg-opacity-50 text-light'> <b>Break Time:</b> 10 min</p>
-                <button className='bg-primary text-center border border-0 w-100 p-2'>Activity Completed</button>
+                <p className='bg-dark bg-opacity-50 text-light'> <b>Break Time:</b> {breakTime} min</p>
+                <button onClick={notify} className='bg-primary text-center border border-0 w-100 p-2'>Activity Completed</button>
+                <ToastContainer/>
             </div>
         </div>
     );
