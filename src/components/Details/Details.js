@@ -19,10 +19,14 @@ const Details = (props) => {
     const [breakTime, setBreakTime]= useState([])
 
     const handelBreakTime = (breakTime)=>{
-        const timeArr= [breakTime];
-        const newTime= [...timeArr,breakTime]
-        console.log(newTime);
-        localStorage.setItem('value','newTime')
+        const timeArr= breakTime;
+        
+        let newObj ={
+            time: timeArr
+        }
+        const timeObj = JSON.stringify(newObj)
+        console.log(timeObj);
+        localStorage.setItem('time',timeObj)
         setBreakTime(breakTime)}
          
     
