@@ -8,7 +8,7 @@ import Details from '../Details/Details';
 const Cards = () => {
     const [cards, setCards] = useState([])
 
-    const [time, setTime]= useState([])
+    const [times, setTime]= useState([])
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
@@ -16,10 +16,10 @@ const Cards = () => {
     },[])
     const addToListHandler = (card)=>{
         console.log(card)
-        const newCard =[...time,card]
+        const newCard =[...times,card]
         setTime(newCard)
     }
-    console.log(time)
+    console.log(times)
     return (
        
             <div className ='container'>
@@ -32,7 +32,7 @@ const Cards = () => {
                 </div>
                 <div className='details-container'>
         
-                <Details></Details>
+                <Details times={times}></Details>
                 </div>
             </div>
        
